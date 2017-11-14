@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="regexmatching.FXMLDocumentController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="REGULAR EXPRESSION :" />
+            <TextField fx:id="regexNfa" promptText="regex..." />
+            <Button fx:id="nfa" mnemonicParsing="false" onMouseClicked="#NFACLICKED" prefHeight="25.0" prefWidth="140.0" text="NFA" />
+            <Button fx:id="NF" mnemonicParsing="false" onMouseClicked="#NFAnCLICKED" prefHeight="25.0" prefWidth="140.0" text="nfa" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="REGULAR EXPRESSION :" />
+            <TextField fx:id="regexDfa" promptText="regex..." />
+            <Button fx:id="dfa" mnemonicParsing="false" onMouseClicked="#DFACLICKED" prefHeight="25.0" prefWidth="140.0" text="DFA" />
+            <Button fx:id="DF" mnemonicParsing="false" onMouseClicked="#DFAnCLICKED" prefHeight="25.0" prefWidth="140.0" text="dfa" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="137.0" text="REGULAR EXPRESSION :" />
+            <TextField fx:id="regexMatch" promptText="regex..." />
+            <Label text="sequence :" />
+            <TextField fx:id="sequence" promptText="seq..." />
+            <Button fx:id="match" mnemonicParsing="false" onMouseClicked="#matchClicked" prefHeight="25.0" prefWidth="100.0" text="Match" />
+         </children>
+      </HBox>
+      <TextArea fx:id="answer" prefHeight="114.0" prefWidth="600.0" promptText="they are ..." />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="reset" mnemonicParsing="false" onMouseClicked="#resetClicked" prefHeight="25.0" prefWidth="225.0" text="reset" />
+            <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#exitClicked" prefHeight="25.0" prefWidth="225.0" text="exit" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
